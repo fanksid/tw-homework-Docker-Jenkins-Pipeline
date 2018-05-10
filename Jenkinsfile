@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'test'
+                sh './gradlew clean test'
             }
         }
     }
